@@ -1,0 +1,12 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_mods_physio-qt">
+			<key name="logo" />
+			<key name="retina_logo" />
+			<key name="featured_button_text" />
+			<key name="featured_button_url" />
+			<key name="bottom_footer_left" />
+			<key name="bottom_footer_right" />
+		</key>
+	</admin-texts>
+</wpml-config>

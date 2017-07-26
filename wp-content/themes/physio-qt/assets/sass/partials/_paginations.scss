@@ -1,0 +1,47 @@
+/* 12.0 Paginations */
+
+.pagination {
+	display: block;
+	position: relative;
+	padding-top: 80px;
+
+	a,
+	span {
+		display: inline-block;
+		padding: 15px 24px;
+		margin: 0 5px 0 0;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		border-radius: 2px;
+		border: 1px solid transparent;
+
+		&.current {
+			color: $white-color;
+			background-color: $secondary-color;
+		}
+	}
+
+	a {
+		color: #999999;
+		border: 1px solid rgba(50, 50, 50, 0.1);
+
+		&:hover {
+			color: $white-color;
+			border-color: transparent;
+			background-color: $secondary-color;
+		}
+
+		&.next {
+			position: absolute;
+			right: 0;
+			margin: 0;
+		}
+
+		&.prev {
+			position: absolute;
+			right: 67px;
+			margin: 0;
+		}
+	}
+}

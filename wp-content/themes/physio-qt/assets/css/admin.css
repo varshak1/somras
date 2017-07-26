@@ -1,0 +1,66 @@
+
+/* Widget Testimonials */
+.testimonial-widget-child {
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+	border: 1px solid #dfdfdf;
+}
+.js-remove-testimonial {
+	text-decoration: none;
+}
+.js-remove-testimonial span {
+	margin-right: 5px;
+}
+
+textarea {
+	max-width: 100%;
+}
+
+/* TGMPA plugin notice fix */
+.themes-php .wrap h1,
+.subsubsub {
+	float: none;
+}
+body.widgets-php #setting-error-tgmpa {
+	float: left;
+}
+body.widgets-php div.widget-liquid-left {
+	clear: both;
+}
+
+/* JS TMCE-active text color fix */
+.js .tmce-active .wp-editor-area {
+	color: #333!important; /* need to overrule */
+}
+
+/* Customizer CSS field align */
+#customize-control-custom_css textarea {
+	width: calc( 100% - 30px);
+	margin-left: 15px;
+}
+#customize-control-custom_css .customize-control-title {
+	margin-left: 15px;
+}
+
+/* ACF fields CSS */
+body .acf-fields > .acf-field { 
+	padding: 20px 30px;
+}
+body .acf-tab-wrap.-left .acf-tab-group li a {
+	padding: 14px 12px;
+}
+body .acf-field .acf-label p {
+	font-size: 12px;
+}
+
+/* !important to make overwrite default styles */
+body .acf-fields.-sidebar {
+	padding-left: 180px!important;
+}
+body .acf-fields.-sidebar:before {
+	width: 180px!important;
+}
+body .acf-tab-wrap.-left .acf-tab-group {
+	width: 180px!important;
+}

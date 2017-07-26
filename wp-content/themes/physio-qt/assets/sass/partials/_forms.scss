@@ -1,0 +1,122 @@
+/* 3.6 Forms */
+
+input,
+select,
+textarea {
+	padding: 13px 18px;
+	max-width: 100%;
+	color: $dark-color;
+	font-weight: normal;
+	border: 1px solid #f2f2f2;
+	background: #f9f9f9;
+	border-radius: 2px;
+
+	&:focus {
+		outline: none;
+		border-color: #cecece;
+	}
+}
+
+// Post Password
+.post-password-form {
+
+	input {
+		margin-left: 10px;
+		height: 45px;
+		border-radius: 2px;
+		outline: none;
+		border: 1px solid rgba(50,50,50,0.1);
+	}
+
+	input[type="submit"] {
+		height: 45px;
+		padding: 0 30px;
+		color: #fff;
+		font-weight: bold;
+		line-height: 25px;
+		border-radius: 25px;
+		background: $secondary-color;
+		border: 1px solid transparent;
+
+		&:hover {
+			background: darken( $secondary-color, 3 );
+		}
+	}
+}
+
+// Contact Form 7
+.wpcf7-text,
+.wpcf7-textarea,
+.wpcf7-select {
+	padding: 15px 20px;
+	margin: 5px 0 13px 0;
+	width: 100%;
+	transition: $primary-transition;
+
+	&:focus {
+		border-color: #cecece;
+		outline: none;
+	}
+}
+
+.wpcf7-textarea {
+	height: 158px;
+}
+
+.wpcf7-select {
+	height: 52px;
+	outline: 0;
+	border-radius: 0;
+	background-image: url(assets/images/select-bg.png);
+	background-position: 95% center;
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.wpcf7-form {
+
+	.wpcf7-form-control-wrap {
+		margin-bottom: 6px;
+	}
+
+	span {
+		margin-bottom: 3px;
+		display: block;
+		font-weight: bold;
+
+		span {
+			font-weight: normal;
+		}
+	}
+
+	img.ajax-loader {
+		position: absolute;
+		right: 15px;
+	}
+
+	.wpcf7-submit {
+		margin-top: 0;
+		height: 50px;
+	}
+	.btn {
+		margin-top: 0;
+	}
+}
+
+// Question Form
+.questionform {
+
+	.white-featured-box {
+		padding: 35px 35px 25px 35px;
+	}
+
+	.wpcf7-textarea {
+		height: 127px;
+	}
+
+	.wpcf7-form-control-wrap {
+		margin-bottom: 0;
+	}
+}

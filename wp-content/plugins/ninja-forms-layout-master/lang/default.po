@@ -1,0 +1,280 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ninja Forms Layout Master\n"
+"POT-Creation-Date: 2015-12-27 12:11+0200\n"
+"PO-Revision-Date: 2015-12-27 12:11+0200\n"
+"Last-Translator: \n"
+"Language-Team:  <info@bigtreeisland.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.11\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/admin-layout.php:21
+msgid "Layout"
+msgstr ""
+
+#: includes/admin-layout.php:57 includes/admin-layout.php:74
+msgid "Columns"
+msgstr ""
+
+#: includes/admin-layout.php:69
+msgid "Front-end Rendering"
+msgstr ""
+
+#: includes/admin-layout.php:73
+msgid "Rows (Default)"
+msgstr ""
+
+#: includes/admin-layout.php:119
+msgid "Field ID"
+msgstr ""
+
+#: includes/admin-styles.php:17
+msgid "Styles"
+msgstr ""
+
+#: includes/admin-styles.php:146
+msgid "General Settings"
+msgstr ""
+
+#: includes/admin-styles.php:154
+msgid "Enable Form Styles"
+msgstr ""
+
+#: includes/admin-styles.php:162
+msgid "Hide Required Note"
+msgstr ""
+
+#: includes/admin-styles.php:170
+msgid "Form Wrapper Class"
+msgstr ""
+
+#: includes/admin-styles.php:174
+msgid "Ex. contact-form, my-form, custom-form"
+msgstr ""
+
+#: includes/admin-styles.php:189
+msgid "Form"
+msgstr ""
+
+#: includes/admin-styles.php:197 includes/admin-styles.php:297
+#: includes/admin-styles.php:371 includes/admin-styles.php:599
+msgid "Background Color"
+msgstr ""
+
+#: includes/admin-styles.php:205 includes/admin-styles.php:305
+#: includes/admin-styles.php:379 includes/admin-styles.php:521
+msgid "Border Color"
+msgstr ""
+
+#: includes/admin-styles.php:213 includes/admin-styles.php:313
+#: includes/admin-styles.php:387 includes/admin-styles.php:529
+msgid "Border Size"
+msgstr ""
+
+#: includes/admin-styles.php:221 includes/admin-styles.php:321
+#: includes/admin-styles.php:395 includes/admin-styles.php:537
+msgid "Border Radius"
+msgstr ""
+
+#: includes/admin-styles.php:229 includes/admin-styles.php:329
+#: includes/admin-styles.php:403
+msgid "Padding"
+msgstr ""
+
+#: includes/admin-styles.php:237
+msgid "Form Field Padding"
+msgstr ""
+
+#: includes/admin-styles.php:245
+msgid "Form Width"
+msgstr ""
+
+#: includes/admin-styles.php:249
+msgid "Optional. Resizes form to specific width (fixed)."
+msgstr ""
+
+#: includes/admin-styles.php:254
+msgid "Form Height"
+msgstr ""
+
+#: includes/admin-styles.php:258
+msgid "Optional. Resizes form to specific height (fixed)."
+msgstr ""
+
+#: includes/admin-styles.php:273
+msgid "Form Success Message"
+msgstr ""
+
+#: includes/admin-styles.php:281 includes/admin-styles.php:355
+#: includes/admin-styles.php:489 includes/admin-styles.php:607
+msgid "Text Color"
+msgstr ""
+
+#: includes/admin-styles.php:289 includes/admin-styles.php:363
+#: includes/admin-styles.php:445 includes/admin-styles.php:513
+#: includes/admin-styles.php:615
+msgid "Font Size"
+msgstr ""
+
+#: includes/admin-styles.php:347
+msgid "Form Error Message"
+msgstr ""
+
+#: includes/admin-styles.php:421
+msgid "Form Labels"
+msgstr ""
+
+#: includes/admin-styles.php:429
+msgid "Color"
+msgstr ""
+
+#: includes/admin-styles.php:437
+msgid "Required* Color"
+msgstr ""
+
+#: includes/admin-styles.php:453
+msgid "Width"
+msgstr ""
+
+#: includes/admin-styles.php:457
+msgid "Optional. Resizes label to specific width (fixed)."
+msgstr ""
+
+#: includes/admin-styles.php:462
+msgid "Height"
+msgstr ""
+
+#: includes/admin-styles.php:466
+msgid "Optional. Resizes label to specific height (fixed)."
+msgstr ""
+
+#: includes/admin-styles.php:481
+msgid "Form Fields"
+msgstr ""
+
+#: includes/admin-styles.php:497
+msgid "Error Text Color"
+msgstr ""
+
+#: includes/admin-styles.php:505
+msgid "Error Field Border Color"
+msgstr ""
+
+#: includes/admin-styles.php:545
+msgid "Input Field Width"
+msgstr ""
+
+#: includes/admin-styles.php:549
+msgid "Optional. Resizes input field to specific width (fixed)."
+msgstr ""
+
+#: includes/admin-styles.php:554
+msgid "Input Field Height"
+msgstr ""
+
+#: includes/admin-styles.php:558
+msgid "Optional. Resizes input field to specific height (fixed)."
+msgstr ""
+
+#: includes/admin-styles.php:563
+msgid "Textarea Field Width"
+msgstr ""
+
+#: includes/admin-styles.php:567
+msgid "Optional. Resizes textarea field to specific width (fixed)."
+msgstr ""
+
+#: includes/admin-styles.php:572
+msgid "Textarea Field Height"
+msgstr ""
+
+#: includes/admin-styles.php:576
+msgid "Optional. Resizes textarea field to specific height (fixed)."
+msgstr ""
+
+#: includes/admin-styles.php:591
+msgid "Form Submit Button"
+msgstr ""
+
+#: includes/admin-styles.php:623
+msgid "Button Border Color"
+msgstr ""
+
+#: includes/admin-styles.php:631
+msgid "Button Border Size"
+msgstr ""
+
+#: includes/admin-styles.php:639
+msgid "Button Border Radius"
+msgstr ""
+
+#: includes/admin-styles.php:647
+msgid "Button Padding (Top and Bottom)"
+msgstr ""
+
+#: includes/admin-styles.php:651 includes/admin-styles.php:660
+#: includes/admin-styles.php:722 includes/admin-styles.php:731
+msgid "Leave \"0\" (without quotes) to keep default padding. "
+msgstr ""
+
+#: includes/admin-styles.php:656 includes/admin-styles.php:727
+msgid "Button Padding (Left and Right)"
+msgstr ""
+
+#: includes/admin-styles.php:670
+msgid "Hover Background Color"
+msgstr ""
+
+#: includes/admin-styles.php:678
+msgid "Hover Text Color"
+msgstr ""
+
+#: includes/admin-styles.php:686
+msgid "Hover Font Size"
+msgstr ""
+
+#: includes/admin-styles.php:694
+msgid "Hover Border Color"
+msgstr ""
+
+#: includes/admin-styles.php:702
+msgid "Hover Border Size"
+msgstr ""
+
+#: includes/admin-styles.php:710
+msgid "Hover Border Radius"
+msgstr ""
+
+#: includes/admin-styles.php:718
+msgid "Button Hover Padding (Top and Bottom)"
+msgstr ""
+
+#: includes/admin-styles.php:742
+msgid "Edit Menu Item"
+msgstr ""
+
+#: includes/admin-styles.php:746 includes/admin-styles.php:762
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/admin-styles.php:754
+msgid "Enable Custom CSS"
+msgstr ""
+
+#: includes/admin-styles.php:770
+msgid "Import Form Styles"
+msgstr ""
+
+#: includes/admin-styles.php:775
+msgid ""
+"Use clipboard button to copy current form styles into clipbord then open a "
+"form you are willing to paste the form styles and use CTRL+V (Windows) or CMD"
+"+V (Mac) to paste style information into Import CSS field (above)."
+msgstr ""

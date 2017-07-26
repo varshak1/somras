@@ -1,0 +1,364 @@
+/*
+Theme Name: Physio-qt
+Theme URI: http://demo.qreativethemes.com/physio
+Author: QreativeThemes
+Author URI: http://qreativethemes.com/
+Description: A WordPress Theme for Physical Therapy & Medical Clinic by QreativeThemes
+Version: 1.4.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: physio-qt
+Tags: custom-background, custom-colors, custom-menu, featured-images, sticky-post, theme-options, translation-ready
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0	----------------- Theme Variables
+2.0 ----------------- Bootstrap
+3.0 ----------------- Start Theme Parials
+	3.1 ------------- Normalize
+	3.2 ------------- Typography
+	3.3 ------------- Alignements
+	3.4 ------------- Shortcodes
+	3.5 ------------- Buttons
+	3.6 ------------- Forms
+4.0 ----------------- Theme Header
+5.0 ----------------- Topbar Navigation
+6.0 ----------------- Main Navigation
+7.0 ----------------- Jumbotron
+8.0 ----------------- Page Title Area
+9.0 ----------------- Breadcrumbs
+10.0 ---------------- WordPress Widgets
+11.0 ---------------- (Custom) Theme Widgets
+12.0 ---------------- Paginations
+13.0 ---------------- Blog
+14.0 ---------------- Comments & Respond
+15.0 ---------------- WordPress Gallery
+16.0 ---------------- Footer
+17.0 ---------------- 404 Page
+18.0 ---------------- FontAwesome
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Theme Variables
+--------------------------------------------------------------*/
+
+@import "vars";
+
+/*--------------------------------------------------------------
+2.0 Bootstrap
+--------------------------------------------------------------*/
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+// @import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+
+// Components
+@import "bootstrap/component-animations";
+@import "bootstrap/dropdowns";
+@import "bootstrap/button-groups";
+@import "bootstrap/input-groups";
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+// @import "bootstrap/breadcrumbs";
+// @import "bootstrap/pagination";
+// @import "bootstrap/pager";
+// @import "bootstrap/labels";
+// @import "bootstrap/badges";
+@import "bootstrap/jumbotron";
+// @import "bootstrap/thumbnails";
+// @import "bootstrap/alerts";
+// @import "bootstrap/progress-bars";
+// @import "bootstrap/media";
+// @import "bootstrap/list-group";
+// If include Bootstrap panels dont forget to change .panel class
+// because of Site Origin Page Builder and Bootstrap .panel class
+// @import "bootstrap/panels";
+// @import "bootstrap/responsive-embed";
+// @import "bootstrap/wells";
+// @import "bootstrap/close";
+
+// Components w/ JavaScript
+@import "bootstrap/modals";
+@import "bootstrap/tooltip";
+@import "bootstrap/popovers";
+@import "bootstrap/carousel";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+/*--------------------------------------------------------------
+3.0 Theme Partials
+--------------------------------------------------------------*/
+
+body {
+	font-family: $content-font;
+	line-height: 1.6;
+	color: $text-color;
+	text-rendering: optimizeLegibility;
+
+	&.boxed {
+		> .layout-boxed {
+			max-width: 100%;
+			margin: 0 auto;
+			overflow: hidden;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+			@media (min-width: $screen-sm) {
+				width: ($container-sm + 80px);
+			}
+			@media (min-width: $screen-md) {
+				width: ($container-md + 80px);
+			}
+			@media (min-width: $screen-lg) {
+				width: ($container-lg + 80px);
+			}
+		}
+
+		&.sticky-navigation {
+			.header-wrapper.is-sticky {
+				left: auto;
+				right: auto;
+
+				@media (min-width: $screen-md) {
+					width: 1050px;
+				}
+
+				@media (min-width: $screen-lg) {
+					width: 1250px;
+				}
+			}
+		}
+	}
+
+	.layout-boxed {
+		overflow-x: hidden;
+	}
+}
+
+.content-area {
+	margin-bottom: 80px;
+
+	.content {
+		@media(max-width: $screen-md) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.white-featured-box {
+		padding: 35px;
+		border-radius: 2px;
+		background: $white-color;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	}
+
+	.featured-box {
+		padding: 34px;
+		color: rgba(255,255,255,0.6);
+		background: #9A65A5;
+		border-radius: 3px;
+
+		strong,
+		a {
+			color: $white-color;
+		}
+
+		p {
+			color: rgba(255,255,255,0.6);
+		}
+
+		hr {
+			border-top: 1px solid rgba(50,50,50,0.2);
+		}
+	}
+
+	table {
+
+		td,
+		th {
+			padding: 7px 10px;
+			border-color: rgba(50,50,50,0.1);
+		}
+	}
+}
+
+@media(min-width: $screen-md) {
+	.sidebar {
+		&.pull--sidebar {
+			margin-top: -110px;
+		}
+	}
+}
+
+/* Custom Booked Plugin Styles */
+body .booked-calendar-wrap.small {
+	margin-bottom: 0;
+
+	table.booked-calendar {
+
+		thead {
+
+			th {
+				padding: 25px 0 23px 0;
+
+				.page-right {
+					right: 20px;
+					top: 25px;
+
+					&:hover {
+						right: 19px;
+					}
+				}
+
+				.page-left {
+					left: 20px;
+					top: 25px;
+
+					&:hover {
+						left: 19px;
+					}
+				}
+			}
+
+			tr.days {
+				th {
+					padding: 13px 0 12px;
+				}
+			}
+		}
+
+		.booked-appt-list {
+
+			h2 {
+				font-size: 20px;
+			}
+			
+			.timeslot {
+				border-top: 1px solid #ddd;
+				margin-bottom: 0;
+
+				.timeslot-people {
+					width: 25%;
+					padding: 15px 0 10px 0;
+
+					button {
+						height: 40px;
+						border-radius: 25px;
+						border: none;
+						outline: none;
+					}
+				}
+
+				.timeslot-time,
+				.timeslot-count {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+body .booked-modal {
+
+	.bm-window p.appointment-info {
+		margin: 20px 0;
+		font-weight: bold;
+		color: #464646;
+	}
+}
+
+body .booked-modal .bm-window p.name {
+	color: #333;
+}
+body .booked-form .field {
+	margin: 12px 0 5px;
+
+	.checkbox-radio-block {
+		padding: 0;
+	}
+}
+
+body #booked-profile-page .booked-profile-appt-list .appt-block .booked-cal-buttons a,
+body #booked-profile-page .booked-profile-appt-list .appt-block .status-block,
+body #booked-profile-page .booked-profile-header .booked-logout-button,
+body .booked-modal input[type=submit],
+body .booked-modal button {
+	padding: 0 20px;
+	border-radius: 25px;
+}
+
+body #booked-profile-page input[type=submit].button-primary,
+body table.booked-calendar input[type=submit].button-primary,
+body .booked-modal input[type=submit].button-primary,
+body .booked-modal button {
+	padding: 9px 30px;
+	border-radius: 25px;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+
+	&:hover {
+		border: none;
+	}
+}
+
+body #booked-page-form input[type=text],
+body #booked-page-form input[type=password],
+body #booked-page-form input[type=email],
+body #booked-page-form textarea {
+	padding: 14px 20px;
+	background: #F5F8FB;
+	border: 1px solid transparent;
+
+	&:focus {
+		border-color: #cecece;
+	}
+}
+
+
+/* Site Origin Widget Bundle Fixes */
+.sow-slider-images {
+	padding: 0;
+}
+
+@import "partials/normalize";
+@import "partials/typography";
+@import "partials/alignments";
+@import "partials/shortcodes";
+@import "partials/buttons";
+@import "partials/forms";
+@import "partials/topbar_nav";
+@import "partials/theme_header";
+@import "partials/main_navigation";
+@import "partials/jumbotron";
+@import "partials/page_header";
+@import "partials/breadcrumbs";
+@import "partials/wp_widgets";
+@import "partials/custom_widgets";
+@import "partials/paginations";
+@import "partials/blog";
+@import "partials/comments";
+@import "partials/gallery";
+@import "partials/footer";
+@import "partials/404";
+
+/*--------------------------------------------------------------
+18.0 FontAwesome
+--------------------------------------------------------------*/
+@import "../../bower_components/fontawesome/scss/font-awesome";
